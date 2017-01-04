@@ -1,0 +1,21 @@
+License and Disclaimer of Warranty and Liability
+
+Subject to the terms below, Yasin KAPLAN hereby grants you a non-exclusive, non-transferable license to install and to use the downloadable, sipcli.
+
+Whether you are licensing the sipcli as an individual or on behalf of an entity, you may not: (i) reverse engineer, decompile, or disassemble the sipcli; (ii) modify, or create derivative works based upon, the TekSIP in whole or in part; (iii) distribute modified copies of the Teksip; (iv) remove any proprietary notices or labels on the sipcli; or (v) resell, lease, rent, transfer, sublicense, or otherwise transfer rights to sipcli. 
+
+You acknowledge that no title to the intellectual property in the sipcli is transferred to you. Title, ownership, rights, and intellectual property rights in and to the sipcli shall remain in Yasin KAPLAN. 
+
+From time to time, Yasin KAPLAN may make available updates to the sipcli. You may download and install or otherwise use those updates to the sipcli that are released.  
+
+sipcli IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YASIN KAPLAN FURTHER DISCLAIMS ALL WARRANTIES; INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THE PRODUCT AND DOCUMENTATION REMAINS WITH RECIPIENT. YASIN KAPLAN DOES NOT WARRANT THAT sipcli WILL DOWNLOAD, INSTALL OR OPERATE CORRECTLY ON YOUR COMPUTER. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL YASIN KAPLAN BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) ARISING OUT OF THE LICENSE AGREEMENT OR THE USE OF OR INABILITY TO USE THE PRODUCT, EVEN IF YASIN KAPLAN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+If this product is a beta release, Yasin KAPLAN does not warrant that the commercial release of this product will be backward-compatible. This product is provided solely on an "as-is" basis, and author, Yasin KAPLAN makes any claim as to fitness for a particular purpose whatsoever.
+
+Yasin KAPLAN reserves the right to modify or update any part of this Agreement and Disclaimer without prior notification.
+
+If sections or individual terms of this statement are not legal or correct, the content or validity of the other parts remain uninfluenced by this fact.
+
+All rights not expressly granted in this Agreement are reserved by Yasin KAPLAN.
+
+Copyright © 2008-2010, Yasin KAPLAN. All rights reserved. 
