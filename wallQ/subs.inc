@@ -1,0 +1,172 @@
+<?php
+
+$status_hd = (file('../Servicecentrum/Status_hd.txt')) or die;
+	if ($status_hd[0] == 0 ) {
+		$status_hd1= '<span style="color: orange ">&#10008&nbsp;&nbsp;&nbsp;&nbsp;HD is afwezig</span>';		
+		}			
+	elseif ($status_hd[0] == 1 ) {
+		$status_hd1 = '&#10004&nbsp;&nbsp;&nbsp;&nbsp;HD is aanwezig';		
+		}
+	else {
+		$status_hd1 = '<span style="color: orange">&#10004&nbsp;&nbsp;&nbsp;&nbsp;HD is aanwezig (via dect)</span>';		
+		}
+
+$status_ab = (file('../Servicecentrum/Status_fb.txt')) or die;
+			if ($status_ab[0] == 0 ) {
+			$status_ab1 = '<span style="color: orange">&#10008&nbsp;&nbsp;&nbsp;&nbsp;AB is afwezig</span>';		
+			}			
+			elseif ($status_ab[0] == 1 ) {
+			$status_ab1 = '<span style="color: ">&#10004</span>&nbsp;&nbsp;&nbsp;&nbsp;AB is aanwezig';			
+			}
+			else {
+			$status_ab1 = '<span style="color: orange">&#10004</span>&nbsp;&nbsp;&nbsp;&nbsp;AB is aanwezig (via dect)</span>';			
+			}
+
+if($_SESSION['sub1'] == 0){
+}elseif($_SESSION['sub1'] == 101){
+    if($stat1[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="25%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="16.6%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 102){
+    if($stat2[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="25%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="16.6%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 103){
+    if($stat3[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="25%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="16.6%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 104){
+    if($stat4[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="25%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="16.6%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 105){
+    if($stat5[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="25%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="16.6%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 106){
+    if($stat6[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 107){
+    if($stat7[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%"><tr><td width="50%">',$namen[7],'</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="25%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[7], '</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="16.6%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub1'] == 108){
+    if($stat8[1] < $_SESSION['limiet']){
+    echo '<div id="sub1"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%"><b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub1-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%">  <b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+
+}elseif($_SESSION['sub1'] == 111){
+	if($main[6] == 0){
+	echo '<div id="agentsub-alarm"><table style="width: 100%" ><tr><td width="50%">Agent status</td><td width="16.6%">Ingelogd: <b>',$main[6],'</b></td><td width="16.6%">Pauze: <b>',$main[5],'</b></td><td width="16.6%">Besch.: <b>',$main[4],'</b></td></tr></table></div>';
+	} else {
+    echo '<div id="agentsub"><table style="width: 100%" ><tr><td width="50%">Agent status</td><td width="16.6%">Ingelogd: <b>',$main[6],'</b></td><td width="16.6%">Pauze: <b>',$main[5],'</b></td><td width"16.6%">Besch.: <b>',$main[4],'</b></td></tr></table></div>';
+    }
+}
+
+
+if($_SESSION['sub2'] == 0){
+}elseif($_SESSION['sub2'] == 101){
+    if($stat1[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="25%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="16.6%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 102){
+    if($stat2[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="25%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="16.6%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 103){
+    if($stat3[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="25%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="16.6%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 104){
+    if($stat4[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="25%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="16.6%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 105){
+    if($stat5[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="25%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="16.6%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 106){
+    if($stat6[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 107){
+    if($stat7[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[7], '</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="25%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[7], '</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="16.6%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub2'] == 108){
+    if($stat8[1] < $_SESSION['limiet']){
+    echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%"><b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%">  <b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+
+}elseif($_SESSION['sub2'] == 111){
+	echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">' . $status_hd1 . '</td><td width="50%">' . $status_ab1 . '</td></tr></table></div>';
+	} 	
+
+
+
+
+
+if($_SESSION['sub3'] == 0){
+}elseif($_SESSION['sub3'] == 101){
+    if($stat1[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="25%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[1], '</td><td width="16.6%"><b>',$stat1[1],'</b></td><td width="16.6%"><b>',$stat1[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 102){
+    if($stat2[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="25%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[2], '</td><td width="16.6%"><b>',$stat2[1],'</b></td><td width="16.6%"><b>',$stat2[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 103){
+    if($stat3[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="25%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[3], '</td><td width="16.6%"><b>',$stat3[1],'</b></td><td width="16.6%"><b>',$stat3[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 104){
+    if($stat4[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="25%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[4], '</td><td width="16.6%"><b>',$stat4[1],'</b></td><td width="16.6%"><b>',$stat4[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 105){
+    if($stat5[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="25%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[5], '</td><td width="16.6%"><b>',$stat5[1],'</b></td><td width="16.6%"><b>',$stat5[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 106){
+    if($stat6[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[6], '</td><td width="16.6%"><b>',$stat6[1],'</b></td><td width="16.6%"><b>',$stat6[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 107){
+    if($stat7[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[7], '</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="25%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[7], '</td><td width="16.6%"><b>',$stat7[1],'</b></td><td width="16.6%"><b>',$stat7[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 108){
+    if($stat8[1] < $_SESSION['limiet']){
+    echo '<div id="sub3"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%"><b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
+    echo '<div id="sub3-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%">  <b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';
+    }
+}elseif($_SESSION['sub3'] == 109){
+echo '<div id="sub3">Tijd  <b>' . date("H:i") .'</b></div>';
+}elseif($_SESSION['sub3'] == 110){
+echo '<div id="sub3">Datum  <b>' . date("d-m-y") .'</b></div>';
+}
+?>

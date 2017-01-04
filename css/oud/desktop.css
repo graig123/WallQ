@@ -1,0 +1,166 @@
+body {
+    	overflow-x:hidden;
+	background-color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+     color: white;
+}
+
+.links {
+	font-family:calibri;
+	padding: 0;
+	text-align: center; 
+	text-align: bottom;
+	position: absolute; 
+	top: 610px; 
+	right: 0; 
+	left: 0;
+	bottom: 0;
+	}
+
+.centervertical {
+	background-color: white;
+        position:absolute;
+	top: 0; 
+	left: 1%; 
+	right: 1%; 
+	bottom: 2%;        
+}
+
+.headerpicbox {	
+	background-image: url("../images/logoAlrijne1.png");
+	background-repeat: no-repeat;
+	height: 90px;
+	width: 100%;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+}
+
+.headerpic {
+	background-image: url("../images/logoAlrijne1.png");
+	background-color: #db75a4;
+	height: 90px;
+	width: 200px;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+}
+
+
+.agents {
+	height: 90px;
+	font-family:calibri;
+	color: #702172;
+	font-size: 34px; 
+	padding: 0;
+	text-align: right; 
+	text-align: top;
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	left: 0;
+	bottom: 0;
+	}
+
+.pagents {
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-right: 5px; 
+	margin-left: 0px;
+	}
+
+.wachtrijbox {
+		height: 13vw;
+		width: 100%;
+		margin:0px;
+		background-color: #efeae2;
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		left: 0;
+		bottom: 0;
+		margin-bottom: 0px;
+		margin-top: 90px;
+		margin-right: 0px; 
+		margin-left: 0px;
+		
+}
+
+.pwachtrij {
+		font-family:calibri;
+		color: #702172;
+		font-size: 5vw;
+		text-align: center;
+}
+
+.line {
+		height: 0.4vw;
+		width: 100%;
+		margin:0px;
+		background-color: #db75a4;
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		left: 0;
+		bottom: 0;
+		margin-bottom: 0px;
+		margin-top: 13vw;
+		margin-right: 0px; 
+		margin-left: 0px;		
+		
+}
+
+.tabelbox {
+		height: 650px;
+		overflow: auto;
+		width: 100%;
+		margin:0px;
+		background-color: #702172;;
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		left: 0;
+		bottom: 0;
+		margin-bottom: 0px;
+		margin-top: 13.4vw;
+		margin-right: 0px; 
+		margin-left: 0px;
+}
+
+.ptabel { 
+		font-family:calibri;
+		font-size: 14px;
+		font-weight: 900;
+		color: white;
+		border-width: 0px;
+		text-align: center;
+    		border: 0px;
+		padding-left: 20px;
+}
+
+table, th, td {
+    	border: 0px solid black;
+	padding-left: 20px;
+}
+
+p {
+ font-size: 0;
+}
