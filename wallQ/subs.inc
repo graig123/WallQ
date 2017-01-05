@@ -1,27 +1,5 @@
 <?php
 
-$status_hd = (file('../Servicecentrum/Status_hd.txt')) or die;
-	if ($status_hd[0] == 0 ) {
-		$status_hd1= '<span style="color: orange ">&#10008&nbsp;&nbsp;&nbsp;&nbsp;HD is afwezig</span>';		
-		}			
-	elseif ($status_hd[0] == 1 ) {
-		$status_hd1 = '&#10004&nbsp;&nbsp;&nbsp;&nbsp;HD is aanwezig';		
-		}
-	else {
-		$status_hd1 = '<span style="color: orange">&#10004&nbsp;&nbsp;&nbsp;&nbsp;HD is aanwezig (via dect)</span>';		
-		}
-
-$status_ab = (file('../Servicecentrum/Status_fb.txt')) or die;
-			if ($status_ab[0] == 0 ) {
-			$status_ab1 = '<span style="color: orange">&#10008&nbsp;&nbsp;&nbsp;&nbsp;AB is afwezig</span>';		
-			}			
-			elseif ($status_ab[0] == 1 ) {
-			$status_ab1 = '<span style="color: ">&#10004</span>&nbsp;&nbsp;&nbsp;&nbsp;AB is aanwezig';			
-			}
-			else {
-			$status_ab1 = '<span style="color: orange">&#10004</span>&nbsp;&nbsp;&nbsp;&nbsp;AB is aanwezig (via dect)</span>';			
-			}
-
 if($_SESSION['sub1'] == 0){
 }elseif($_SESSION['sub1'] == 101){
     if($stat1[1] < $_SESSION['limiet']){
@@ -114,9 +92,6 @@ if($_SESSION['sub2'] == 0){
     echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%"><b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';} else {
     echo '<div id="sub2-alarm"><table style="width: 100%" ><tr><td width="50%">',$namen[8], '</td><td width="16.6%">  <b>',$stat8[1],'</b></td><td width="16.6%"><b>',$stat8[2],'</b></td><td width="16.6%"></td></tr></table></div>';
     }
-
-}elseif($_SESSION['sub2'] == 111){
-	echo '<div id="sub2"><table style="width: 100%" ><tr><td width="50%">' . $status_hd1 . '</td><td width="50%">' . $status_ab1 . '</td></tr></table></div>';
 	} 	
 
 

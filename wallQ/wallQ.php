@@ -98,7 +98,7 @@ echo '<div class="onder">';
 
 include 'subs.inc'; //hierna wordt om de 20 sec de 'subs.php.php' geladen (als GET- variable aanwezig is)
 echo '</div>'; 
-// foooter is voor de datum en tijd indien deze is gekozen wordt dit om de 1sec geupdate. 
+// foooter is voor de datum en tijd dit om de 1sec geupdate. (deze constante updates zijn belangrijk zodat de sesie niet verloopt!!)
 echo '<div class="foooter">';
 
 echo '<div class="footer"><div id="time"><small>' . date("H:i") .'</div><div id="date">' . date("d-m-Y") .'</small></div>';

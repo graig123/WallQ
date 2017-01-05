@@ -1,7 +1,7 @@
 "ACD:","rijnland","rijnland","rijnland","rijnland","rijnland","rijnland","rijnland","rijnland"
 "Split/Skill:","Intern G","Interne","Chirurgi","Chirurgi","Dermatol","KNO Sk2","Helpdesk","Helpdesk"
-"Calls Waiting:",0,0,0,0,0,0,0,0
-"Oldest Call Waiting:",:00,:00,:00,:00,:00,:00,:00,:00
+"Calls Waiting:",4,3,2,6,3,1,0,0
+"Oldest Call Waiting:",2:23,1:12,0:15,1:01,:00,:00,:00,:00
 "Avg Speed Ans:",0,0,0,0,0,0,0,0
 "Agents Avail:",1,0,1,0,1,1,0,0
 "Agents in AUX:",4,0,10,0,5,8,7,15
