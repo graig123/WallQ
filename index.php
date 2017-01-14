@@ -62,11 +62,18 @@ echo '<input type="radio" name="limit" value="3" checked="checked">3<br>';
 echo '<input type="radio" name="limit" value="4">4<br>';
 echo '<input type="radio" name="limit" value="5">5<br>';
 echo '<input type="radio" name="limit" value="6">6<br>';
-echo '<input type="radio" name="limit" value="7">7<br></div>';
+echo '<input type="radio" name="limit" value="7">7<br>';
+echo '<input type="radio" name="limit" value="10">10<br>';
+echo '<input type="radio" name="limit" value="15">15<br>';
+echo '<input type="radio" name="limit" value="30">30<br></div>';
 
 echo '<div id="formchild"><h2>Style</h2><br>';
 echo '<input type="radio" name="style" value="none" checked="checked">Plus<br>';
 echo '<input type="radio" name="style" value="1">Basic<br></div>';
+
+echo '<div id="formchild"><h2>Language</h2><br>';
+echo '<input type="radio" name="lang" value="EN" checked="checked">English<br>';
+echo '<input type="radio" name="lang" value="NL">Nederlands<br></div>';
 ?>
 </div>
 <br><br>

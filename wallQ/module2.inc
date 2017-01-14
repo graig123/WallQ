@@ -21,12 +21,12 @@ $max_wachttijd = explode(":",$tabel[8]);
 
 echo '<table width="95%" border="0" cellspacing="0">';
 echo '<tr>';
-echo '<td width="16%">Afgehandeld';
-echo '<td width="16%">Gem. Wachttijd';
-echo '<td width="16%">Gem. Gesprks.duur';
-echo '<td width="16%">Geannuleerd';
-echo '<td width="16%">Gem. Annu.tijd';
-echo '<td width="16%">Max. Wachttijd';
+echo '<td width="16%">', $lang_H[0];
+echo '<td width="16%">', $lang_H[1];
+echo '<td width="16%">', $lang_H[2];
+echo '<td width="16%">', $lang_H[3];
+echo '<td width="16%">', $lang_H[4];
+echo '<td width="16%">', $lang_H[5];
 echo '<tr>';
 echo '<td width="16%"><b>', $tabel[3],'</b>';
 echo '<td width="16%">';

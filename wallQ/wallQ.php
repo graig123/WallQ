@@ -11,7 +11,7 @@ if($_GET['style'] == 1) {
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="wachtrij_scripts.js"></script>
+<script src="wallq_update_ script.js"></script>
 
 <?php
 session_start();
@@ -55,9 +55,16 @@ if(isset($_GET['sub3'])){
   $_SESSION['sub3'] = $sub3;
 } else {
 }
+if(isset($_GET['lang'])){
+  $lang_ses = $_GET['lang'];
+  $lang_ses = (string)$lang_ses;
+  $_SESSION['lang'] = $lang_ses;
+} else {
+}
 
 $_SESSION['queue'] = $wr;
-
+#print_r($_SESSION['lang']);
+require "../lang/".$_SESSION['lang'].".php";		
 require "queque.php";
 require "namen.php";
 
@@ -72,45 +79,45 @@ $stat8 = queque(8);
 
 $main = queque($_SESSION['queue']); 
 
-echo '<title>', $main[0],' (', $main[1], ')</title>';// wordt om de 10 sec geupdate
+echo '<title>', $main[0],' (', $main[1], ')</title>';// update's title every 10s, this is set in WallQ/wallq_update_script.js
 echo '</head>';
 echo '<body>';
 echo '<div class="background-pic"></div>';
 echo '<div class="headerpic-box"><div class="headerpic"></div></div>';
 echo '<div class="naam1">';
-include 'naam1.inc'; //hierna wordt om de 10 sec de 'naam1.php' geladen
+include 'naam1.inc'; // update's the callcenter in main view every 10s, this is set in WallQ/wallq_update_script.js
 echo '</div>';
 echo '<div class="led">';
-include 'led.inc'; //hierna wordt om de 10 sec de 'led.php' geladen
+include 'led.inc'; // update's the top-right alert indicator every 10s, this is set in WallQ/wallq_update_scrip.js
 echo '</div>';
-// module1 = main-wachtrij display
+	
+// module1 = this element displays the main callcenter's live queque information
 echo '<div class="module1">';
-  include 'module1.inc'; //hierna wordt om de 10 sec de 'module1.php' geladen
-  
+  include 'module1.inc'; // update's the main callcenter queue information every 10s, this is set in WallQ/wallq_update.js
 echo '</div>';
-// module2 =tabel met historische info onder het wachtrij venster
+	
+// module2 = this elements shows historic information of the callcenter in main view
 echo '<div class="module2">';
-include 'module2.inc'; //hierna wordt om de 10minute de 'module2.php' geladen
-
-echo '</div>'; 
-// subs/onder = zijn de optionele balken met andere afdelingen welke men mogelijke wil inzien
+include 'module2.inc'; // updates the historic information every 2m, this is set in WalQ/wallq_update.js
+echo '</div>';
+	
+// subs/onder = this element shows the optional sub's, agent info/ or other callcenter queue's 
 echo '<div class="onder">';
 
-include 'subs.inc'; //hierna wordt om de 20 sec de 'subs.php.php' geladen (als GET- variable aanwezig is)
+include 'subs.inc'; //updates the seleceted subs every 20s (if GET- variables are set)
 echo '</div>'; 
-// foooter is voor de datum en tijd dit om de 1sec geupdate. (deze constante updates zijn belangrijk zodat de sesie niet verloopt!!)
-echo '<div class="foooter">';
+	
+// foooter = this element shows time. date and logo !!Needs to be set, otherwise php session wil timeout and queue will fail after 1440s !!
+echo '<div class="foooter">'; // updates every 1m, this is set in WalQ/wallq_update.js
 
 echo '<div class="footer"><div id="time"><small>' . date("H:i") .'</div><div id="date">' . date("d-m-Y") .'</small></div>';
 
-// onderstaande is voor debugging
-//print_r($_SESSION);
-//echo '<center>SessionId = ' .session_id() . '</center>';
+// uncomment for debugging
+// print_r($_SESSION);
+// echo '<center>SessionId = ' .session_id() . '</center>';
 
 echo '</div>';
-
 echo '</div>';
-
 echo '</body>';
 echo '</html>';
 ?>

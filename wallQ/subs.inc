@@ -44,9 +44,9 @@ if($_SESSION['sub1'] == 0){
 
 }elseif($_SESSION['sub1'] == 111){
 	if($main[6] == 0){
-	echo '<div id="agentsub-alarm"><table style="width: 100%" ><tr><td width="50%">Agent status</td><td width="16.6%">Ingelogd: <b>',$main[6],'</b></td><td width="16.6%">Pauze: <b>',$main[5],'</b></td><td width="16.6%">Besch.: <b>',$main[4],'</b></td></tr></table></div>';
+	echo '<div id="agentsub-alarm"><table style="width: 100%" ><tr><td width="50%">', $lang_A[0], '</td><td width="16.6%">', $lang_A[1], '<b>',$main[6],'</b></td><td width="16.6%">', $lang_A[2], '<b>',$main[5],'</b></td><td width="16.6%">', $lang_A[3], '<b>',$main[4],'</b></td></tr></table></div>';
 	} else {
-    echo '<div id="agentsub"><table style="width: 100%" ><tr><td width="50%">Agent status</td><td width="16.6%">Ingelogd: <b>',$main[6],'</b></td><td width="16.6%">Pauze: <b>',$main[5],'</b></td><td width"16.6%">Besch.: <b>',$main[4],'</b></td></tr></table></div>';
+    echo '<div id="agentsub"><table style="width: 100%" ><tr><td width="50%">', $lang_A[0], '</td><td width="16.6%">', $lang_A[1], '<b>',$main[6],'</b></td><td width="16.6%">', $lang_A[2], '<b>',$main[5],'</b></td><td width"16.6%">', $lang_A[3], '<b>',$main[4],'</b></td></tr></table></div>';
     }
 }
 
