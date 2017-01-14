@@ -14,14 +14,14 @@
 include('wallQ/namen.php');
 
 echo '<div id="formchild"><h2>Main Queue</h2><br>';
-echo '<input type="radio" name="wachtrij" value="1" checked="checked">',$namen[1],'<br>';
-echo '<input type="radio" name="wachtrij" value="2">',$namen[2],'<br>';
-echo '<input type="radio" name="wachtrij" value="3">',$namen[3],'<br>';
-echo '<input type="radio" name="wachtrij" value="4">',$namen[4],'<br>';
-echo '<input type="radio" name="wachtrij" value="5">',$namen[5],'<br>';
-echo '<input type="radio" name="wachtrij" value="6">',$namen[6],'<br>';
-echo '<input type="radio" name="wachtrij" value="7">',$namen[7],'<br>';
-echo '<input type="radio" name="wachtrij" value="8">',$namen[8],'<br></div>';
+echo '<input type="radio" name="queue" value="1" checked="checked">',$namen[1],'<br>';
+echo '<input type="radio" name="queue" value="2">',$namen[2],'<br>';
+echo '<input type="radio" name="queue" value="3">',$namen[3],'<br>';
+echo '<input type="radio" name="queue" value="4">',$namen[4],'<br>';
+echo '<input type="radio" name="queue" value="5">',$namen[5],'<br>';
+echo '<input type="radio" name="queue" value="6">',$namen[6],'<br>';
+echo '<input type="radio" name="queue" value="7">',$namen[7],'<br>';
+echo '<input type="radio" name="queue" value="8">',$namen[8],'<br></div>';
 
 echo '<div id="formchild"><h2>Queue 2</h2><br>';
 echo '<input type="radio" name="sub1" value="none" checked="checked">none<br>';
@@ -58,11 +58,11 @@ echo '<input type="radio" name="sub3" value="107">',$namen[7],'<br>';
 echo '<input type="radio" name="sub3" value="108">',$namen[8],'<br></div>';
 
 echo '<div id="formchild"><h2>Alert Limit</h2><br>';
-echo '<input type="radio" name="limiet" value="3" checked="checked">3<br>';
-echo '<input type="radio" name="limiet" value="4">4<br>';
-echo '<input type="radio" name="limiet" value="5">5<br>';
-echo '<input type="radio" name="limiet" value="6">6<br>';
-echo '<input type="radio" name="limiet" value="7">7<br></div>';
+echo '<input type="radio" name="limit" value="3" checked="checked">3<br>';
+echo '<input type="radio" name="limit" value="4">4<br>';
+echo '<input type="radio" name="limit" value="5">5<br>';
+echo '<input type="radio" name="limit" value="6">6<br>';
+echo '<input type="radio" name="limit" value="7">7<br></div>';
 
 echo '<div id="formchild"><h2>Style</h2><br>';
 echo '<input type="radio" name="style" value="none" checked="checked">Plus<br>';

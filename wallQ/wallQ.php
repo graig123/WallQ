@@ -15,7 +15,7 @@ if($_GET['style'] == 1) {
 
 <?php
 session_start();
-$wr = $_GET['wachtrij'];
+$wr = $_GET['queue'];
 $wr = (int)$wr;
 if ($wr <= 0) {
 	$wr = 1; }
@@ -23,10 +23,10 @@ if ($wr > 8) {
 	$wr = 1;
 }
 
-if(isset($_GET['limiet'])){
-  $limiet = $_GET['limiet'];
+if(isset($_GET['limit'])){
+  $limiet = $_GET['limit'];
  // $sub1 = (int)$sub1;
-  $_SESSION['limiet'] = $limiet;
+  $_SESSION['limit'] = $limiet;
 } else {
 }
 
@@ -56,7 +56,7 @@ if(isset($_GET['sub3'])){
 } else {
 }
 
-$_SESSION['wachtrij'] = $wr;
+$_SESSION['queue'] = $wr;
 
 require "queque.php";
 require "namen.php";
@@ -70,7 +70,7 @@ $stat6 = queque(6);
 $stat7 = queque(7);
 $stat8 = queque(8);
 
-$main = queque($_SESSION['wachtrij']); 
+$main = queque($_SESSION['queue']); 
 
 echo '<title>', $main[0],' (', $main[1], ')</title>';// wordt om de 10 sec geupdate
 echo '</head>';
