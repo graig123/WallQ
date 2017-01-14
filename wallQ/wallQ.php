@@ -63,8 +63,8 @@ if(isset($_GET['lang'])){
 }
 
 $_SESSION['queue'] = $wr;
-#print_r($_SESSION['lang']);
-require "../lang/".$_SESSION['lang'].".php";		
+
+require "../lang/".$_SESSION['lang'].".php";
 require "queque.php";
 require "namen.php";
 
@@ -120,4 +120,5 @@ echo '</div>';
 echo '</div>';
 echo '</body>';
 echo '</html>';
+//session_destroy();
 ?>

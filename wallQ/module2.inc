@@ -1,9 +1,9 @@
 <?php
-echo '<a class="one" href="overzicht_vandaag.php">';
+
 echo '<div class="tabelbox">';
 echo '<div class="ptabel">';
 
-$filename_0="../cms/tabel". $_SESSION['wachtrij'] . ".csv" or die;
+$filename_0="../cms/tabel". $_SESSION['queue'] . ".csv" or die;
 $values = array();
 $handle = fopen($filename_0, "r");
 while (!feof($handle)) {

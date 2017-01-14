@@ -1,14 +1,6 @@
 <?php
-
-// Fuction om de juiste queque te verkrijgen
-
 function queque($q_number) {
-
-// declareer de Namen van de afdelingen zoals ze op het wallboard zichtbaar worden
-
 require 'namen.php';
-
-// het exportbestand uit de cms uitlezen
 
 $file01 = "../cms/multi_export.csv";
 $waardes01 = array();
@@ -17,8 +9,6 @@ while (!feof($handle)) {
        $waardes01 [] = str_replace("\r\n", "", fgets($handle, 128));
                        }
 fclose($handle);
-
-// de array opblazen en variabelen maken
 
 $acd = explode(",", $waardes01[0]);
 $skill = explode(",", $waardes01[1]);
@@ -29,25 +19,7 @@ $besch = explode(",", $waardes01[5]);
 $pauze = explode(",", $waardes01[6]);
 $ingesch = explode(",", $waardes01[7]);
 
-
-//SIM!!!
-
-//$acd = array('acd','rijnland','rijnland','rijnland','rijnland','rijnland','rijnland','rijnland','rijnland',);
-//$skill = $namen;
-//$in_wacht = array('wachtende',rand(0,5),rand(0,5),rand(0,5),rand(0,5),rand(0,5),rand(0,5),rand(0,5),rand(0,5),);
-//$langst_in_wacht = array('langst',rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),);
-//$gem_in_wacht = array('gem',rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),);
-//$gem_antw_snelheid = array('gem',rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),rand(0,60).':'.rand(0,60),);
-
-//$besch = array('besch',rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),);
-//$pauze = array('pauze',rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),);
-//$ingesch = array('ingesc',rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),rand(0,3),);
-
-//SIM einde
-
-// de queque arrays maken: deze zullen verder gebruikt gaan worden in de site $q0 zijn onbruikbare skillnamen, q1 tm q8 zijn de queque's
-
-//$q0 = array($acd[0],$skill[0],$in_wacht[0],$langst_in_wacht[0],$gem_antw_snelheid[0],$besch[0],$pauze[0],$ingesch[0]);
+  
 $q1 = array($namen[1],$in_wacht[1],$langst_in_wacht[1],$gem_antw_snelheid[1],$besch[1],$pauze[1],$ingesch[1]);
 
 $langst_in_wacht1 = explode(":",$q1[2]);
@@ -157,5 +129,4 @@ $gem_antw_snelheid8 = explode(":", $q8[3]);
               if ($q_number == 8) {
                   return $q8;     }
 }
-
 ?>

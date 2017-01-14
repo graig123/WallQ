@@ -7,14 +7,14 @@ $lang_Q = array (
 $lang_H = array (
   0 => 'Calls Handled',
   1 => 'Wait Time',
-  2 => 'average Talktime',
-  3 => 'Cannceld',
-  4 => 'average Cannceltime',
-  5 => 'Max. Waittime',
+  2 => 'Talk time',
+  3 => 'Canceled',
+  4 => 'Canceled time',
+  5 => 'Max. Queuetime',
   );
  $lang_A = array (
   0 => 'Agent status',
-  1 => 'LoggedIn: ',
+  1 => 'Agents: ',
   2 => 'Away: ',
   3 => 'Avail.: ',
   );
