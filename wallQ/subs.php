@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require_once "../lang/".$_SESSION['lang'].".php";
 require "namen.php";
 require "queque.php";
 $stat1 = queque(1);

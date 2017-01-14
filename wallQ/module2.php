@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once "../lang/".$_SESSION['lang'].".php";
+
 echo '<a class="one" href="overzicht_vandaag.php">';
 echo '<div class="tabelbox">';
 echo '<div class="ptabel">';

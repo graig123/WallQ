@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+require_once "../lang/".$_SESSION['lang'].".php";
 require_once 'queque.php';
 $main = queque($_SESSION['wachtrij']);
 
